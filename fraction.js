@@ -49,21 +49,35 @@ function output(fraction1, fraction2){
 
 
 // adding fractions
-class AddTwoNumbers
-{
-  constructor(num1,num2){
-  this.num1=num1;
-  this.num2=num2;
-  }
-
-  add(){
-    return this.num1 + this.num2;
-  }
+const prompt=require('prompt-sync')();
+class Fraction {
+  constructor(num,den) {
+    this.num=num;
+    this.den=den;
+  }
 }
-let addtwonumbers= new AddTwoNumbers(2,3);
-let result=addtwonumbers.add();
-console.log(result);
+
+function add(fraction1, fraction2){
+return (fraction1.num * fraction2.den + fraction2.num * fraction1.den)/fraction1.den*fraction2.den
+}  
+
+function input(){
+ fraction1 = new Fraction(parseFloat(prompt("enter the nominator ")), parseFloat(prompt("enter the denominator ")));
+ fraction2 = new Fraction(parseFloat(prompt("enter the nominator ")), parseFloat(prompt("enter the denominator ")));
+ return [fraction1, fraction2]
+} 
   
+function output(sum){
+  console.log("the sum is %d",sum);
+}
+  
+function main(){
+  [fraction1, fraction2] = input();
+  let sum = add(fraction1, fraction2);
+  output(sum);
+}
+ 
+main()  
 
 //Multiplication
 const prompt=require('prompt-sync')();
