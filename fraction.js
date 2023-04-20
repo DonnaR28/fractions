@@ -1,3 +1,4 @@
+//compare fractions
 class Fraction {
   constructor(num, den) {
     this.num = num;
@@ -28,6 +29,22 @@ class Fraction {
   }
 }
 
+function output(fraction1, fraction2){
+  let compare = fraction1.compareTo(fraction2){
+    if(compare == 1){
+      return `${fraction1.num}/${fraction1.den} is greater `;
+    }
+    eles if(compare == -1){
+    return `${fraction2.num}/${fraction2.den}  is greater`;
+    }
+    else{
+      return `${fraction1.num}/${fraction1.den} is equal ${fraction2.num}/${fraction2.den}`;
+    }
+  }
+  
+  let largest = output(fraction1, fraction2);
+  console.log(largest)
+
 
 
 
@@ -39,6 +56,14 @@ class AddTwoNumbers
   this.num2=num2;
   }
 
+  add(){
+    return this.num1 + this.num2;
+  }
+}
+let addtwonumbers= new AddTwoNumbers(2,3);
+let result=addtwonumbers.add();
+console.log(result);
+  
 
 //Multiplication
 const prompt=require('prompt-sync')();
@@ -67,15 +92,7 @@ const fraction2 = Fraction.fromInput();
 const product = fraction1.multiply(fraction2);
 console.log(`Product: ${product.numerator}/${product.denominator}`);
 
-
-  add(){
-    return this.num1 + this.num2;
-  }
-}
-let addtwonumbers= new AddTwoNumbers(2,3);
-let result=addtwonumbers.add();
-console.log(result);
-
+//subtraction and division
 const prompt=require('prompt-sync')();
 class Fraction {
   constructor(nominator,denominator) {
@@ -108,20 +125,3 @@ function main(){
   output(quotient,subtract);
 }
 main()
-
-function output(fraction1, fraction2){
-  let compare = fraction1.compareTo(fraction2){
-    if(compare == 1){
-      return `${fraction1.num}/${fraction1.den} is greater `;
-    }
-    eles if(compare == -1){
-    return `${fraction2.num}/${fraction2.den}  is greater`;
-    }
-    else{
-      return `${fraction1.num}/${fraction1.den} is equal ${fraction2.num}/${fraction2.den}`;
-    }
-  }
-  
-  let largest = output(fraction1, fraction2);
-  console.log(largest)
-
