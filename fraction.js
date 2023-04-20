@@ -30,6 +30,23 @@ class Fraction {
 
 
 
+
+// adding fractions
+class AddTwoNumbers
+{
+  constructor(num1,num2){
+  this.num1=num1;
+  this.num2=num2;
+  }
+  
+  add(){
+    return this.num1 + this.num2;
+  }
+}
+let addtwonumbers= new AddTwoNumbers(2,3);
+let result=addtwonumbers.add();
+console.log(result);
+
 const prompt=require('prompt-sync')();
 class Fraction {
   constructor(nominator,denominator) {
@@ -79,6 +96,3 @@ function output(fraction1, fraction2){
   let largest = output(fraction1, fraction2);
   console.log(largest)
     
-    
-  
-
