@@ -7,3 +7,7 @@ class Fraction{
   
   }
 }
+
+
+
+// adding fractions
