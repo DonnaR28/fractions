@@ -5,5 +5,6 @@ class Fraction{
   }
   find_compare(){
   
-  }
+  } 
+  /* ding dong bell*/
 }
